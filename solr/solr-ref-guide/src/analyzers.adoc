@@ -65,7 +65,7 @@ Analysis takes place in two contexts. At index time, when a field is being creat
 In many cases, the same analysis should be applied to both phases. This is desirable when you want to query for exact string matches, possibly with case-insensitivity, for example. In other cases, you may want to apply slightly different analysis steps during indexing than those used at query time.
 
 If you provide a simple `<analyzer>` definition for a field type, as in the examples above, then it will be used for both indexing and queries. If you want distinct analyzers for each phase, you may include two `<analyzer>` definitions distinguished with a type attribute. For example:
-
+mm
 [source,xml]
 ----
 <fieldType name="nametext" class="solr.TextField">
